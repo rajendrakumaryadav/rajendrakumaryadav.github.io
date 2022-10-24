@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle('Personal Portfolio - Rajendra Kumar Yadav - Under Construction');
   }
 
-  ngOnInit (): void {
-  }
+  ngOnInit (): void { }
 
 }
