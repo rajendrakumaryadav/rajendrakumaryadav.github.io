@@ -3,6 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   background: url('./assets/images/background.jpg') no-repeat center center fixed;
-}
+} */
