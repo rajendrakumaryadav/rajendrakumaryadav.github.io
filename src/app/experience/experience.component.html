@@ -1,86 +1,56 @@
 <section class="mb-8">
-  <h2 class="text-2xl font-bold mb-4">Experience</h2>
+  <h2 class="text-2xl font-medium main-title text-blue-900 mb-4"><i class="fa fa-lightbulb-o"></i> Experience</h2>
 
-  <!-- Current Job -->
-  <div class="mb-4">
-    <h3 class="text-xl font-semibold">
-      &star; Consultant - Magna Steyr India [Jan, 2023]
-    </h3>
-    <p class="text-gray-600">
-      As a Python Developer at Magna Steyr India, I play a pivotal role in the
-      development of cutting-edge microservices. Leveraging my expertise in
-      Python, I design and implement scalable and efficient microservices
-      architecture that forms the backbone of our software solutions. The
-      utilization of Docker for containerization ensures seamless deployment
-      and scalability, contributing to the agility and efficiency of our
-      development process.
-    </p>
-    <p class="text-gray-600">
-      In addition to my role as a Python Developer, I am actively engaged in
-      PowerBI development, where I contribute to the creation of interactive
-      and insightful dashboards for data analysis. Working closely with
-      business stakeholders, I transform raw data into meaningful insights
-      through PowerBI visualizations, ensuring our reports provide accurate
-      and actionable information.
-    </p>
-    <p class="text-gray-600">
-      My collaborative approach with cross-functional teams allows us to
-      deliver high-quality software solutions that meet and exceed the
-      expectations of our clients. At Magna Steyr India, I am at the forefront
-      of innovation, combining my Python development skills with
-      containerization techniques and contributing to the dynamic field of
-      data visualization through PowerBI.
-    </p>
+  <div *ngIf="experienceData">
+
+    <div class="mb-4" *ngFor="let exp of experienceData.experience">
+
+      <h3 class="text-xl mb-3 font-semibold text-blue-900">
+        &star; {{ exp.designation }} - {{ exp.company }} - ({{ exp.duration }})
+      </h3>
+
+      <section *ngIf="exp.innovation">
+        <h3 class="mb-3 px-2 font-bold text-gray-500">
+          <i class="fa-regular fa-lightbulb"></i> Innovation
+        </h3>
+        <p class="mx-4">
+          {{ exp.innovation }}
+        </p>
+      </section>
+
+      <section *ngIf="exp.overall_contribution">
+        <h3 class="mb-3 px-2 font-bold text-gray-500">
+          <i class="fa fa-hands-helping"></i> Overall Contribution
+        </h3>
+        <p class="mx-4">
+          {{ exp.overall_contribution }}
+        </p>
+      </section>
+
+      <section *ngIf="exp.data_visualization">
+        <h3 class="mb-3 px-2 font-bold text-gray-500">
+          <i class="fa fa-bar-chart"></i> Data Visualization
+        </h3>
+        <p class="mx-4">
+          {{ exp.data_visualization }}
+        </p>
+      </section>
+
+
+      <section *ngIf="exp.responsibilities">
+        <h3 class="mb-2 px-2 text-start font-bold text-gray-500">
+          <i class="fa-brands fa-critical-role"></i> Responsibilities
+        </h3>
+        <ol
+          class="px-4 py-0.5"
+          *ngFor="let responsibilty of exp.responsibilities; let i=index;"
+        >
+          <li>
+            {{i + 1}}. {{ responsibilty }}
+          </li>
+        </ol>
+      </section>
+      <hr/>
+    </div>
   </div>
-
-  <!-- Previous Job -->
-  <div class="mb-4">
-    <h3 class="text-xl font-semibold">
-      &star; Web Developer - Narmware Software Solutions Pvt. Ltd. [Mar, 2022 - Jan,
-      2023]
-    </h3>
-    <p class="text-gray-600">
-      During my tenure at Narmware, I served as a versatile Web Developer,
-      contributing significantly to various projects that spanned both
-      monolithic and microservices architectures. My expertise in web
-      development was honed through the creation of robust and scalable
-      solutions using PHP, including frameworks such as CodeIgniter and
-      Laravel.
-    </p>
-
-    <p class="text-gray-600">
-      As a Web Developer at Narmware, I took a hands-on approach to develop
-      and maintain monolithic platforms, utilizing PHP and CodeIgniter to
-      build efficient and feature-rich applications. This experience not only
-      enhanced my proficiency in PHP development but also solidified my
-      understanding of building comprehensive web solutions.
-    </p>
-
-    <p class="text-gray-600">
-      In addition to monolithic platforms, I delved into the realm of
-      microservices, where I played a key role in the adoption of Laravel and
-      Docker as our primary development platforms. Leveraging Laravel's
-      elegant syntax and Docker's containerization capabilities, I contributed
-      to the creation of a scalable and maintainable microservices
-      architecture. This allowed us to modularize our applications and enhance
-      overall system performance.
-    </p>
-
-    <p class="text-gray-600">
-      My responsibilities encompassed the end-to-end development process, from
-      conceptualization to deployment. Collaborating with cross-functional
-      teams, I ensured that our web solutions aligned with the business
-      objectives and provided a seamless user experience.
-    </p>
-
-    <p class="text-gray-600">
-      At Narmware, I thrived on the challenges of web development, whether it
-      be in the context of monolithic applications or the intricate landscape
-      of microservices. This experience not only enriched my technical skills
-      but also fostered a deep appreciation for the dynamic and ever-evolving
-      field of web development.
-    </p>
-  </div>
-
-  <!-- Add more job sections as needed -->
 </section>

@@ -1,8 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600&display=swap"); /* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* body {
   background: url('./assets/images/background.jpg') no-repeat center center fixed;
 } */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f7fafc;
+  font-weight: 400;
+  font-size: 14px;
+}

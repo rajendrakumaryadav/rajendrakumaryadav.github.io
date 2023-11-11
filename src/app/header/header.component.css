@@ -1,3 +1,20 @@
 .profile-image {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
 }
+header {
+  background: linear-gradient(to bottom right, #ff9933, #ffffff, #138808);
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.sub-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}

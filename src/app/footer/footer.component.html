@@ -1,7 +1,7 @@
 
-<footer class="bg-blue-500 mt-4 text-white py-4 flex flex-grow justify-between items-center">
+<footer class="bg-blue-500 mt-4 text-white py-4 flex flex-grow justify-between items-center mb-0 rounded-md">
   <p class="flex-grow sm:flex-col sm:justify-center sm:items-center px-3">&copy; {{ buildTime | date: 'y' }} - Rajendra Kumar R Yadav</p>
   <p class="text-gray-700 px-8 hidden sm:block text-sm font-semibold">
-    <span class="text-white">Last Updated:</span> {{ buildTime | date: 'MMM d, y, h:mm:ss a' }}
+    <span class="text-white">Last Updated:</span> <span class="text-gray-200"> {{ buildTime | date: 'MMM d, y, h:mm:ss a' }}</span>
   </p>
 </footer>

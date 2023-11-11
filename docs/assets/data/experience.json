@@ -1,0 +1,36 @@
+{
+  "experience": [
+    {
+      "designation": "Consultant",
+      "company": "Magna Steyr India",
+      "duration": "Jan, 2023 - Present",
+      "innovation": "Combining Python development skills with containerization techniques.",
+      "overall_contribution": "At the forefront of innovation, contributing to the dynamic field of data visualization through PowerBI.",
+      "data_visualization": "Actively engaged in PowerBI development, contributing to the creation of interactive and insightful dashboards for data analysis.",
+      "responsibilities": [
+        "Play a pivotal role in the development of cutting-edge microservices.",
+        "Design and implement scalable and efficient microservices architecture.",
+        "Utilize expertise in Python for software solutions.",
+        "Utilize Docker for containerization to ensure seamless deployment and scalability.",
+        "Contribute to the agility and efficiency of the development process.",
+        "Transform raw data into meaningful insights through PowerBI visualizations."
+      ]
+    },
+    {
+      "designation": "Web Developer",
+      "company": "Narmware Software Solutions Pvt. Ltd.",
+      "duration": "Mar, 2022 - Jan, 2023",
+      "innovation": "Played a key role in the adoption of Laravel and Docker as primary development platforms for microservices.",
+      "overall_contribution": "Thrive on the challenges of web development, whether in the context of monolithic applications or the intricate landscape of microservices.",
+      "responsibilities": [
+        "Contribute significantly to various projects in both monolithic and microservices architectures.",
+        "Create robust and scalable solutions using PHP, including CodeIgniter and Laravel frameworks.",
+        "Develop and maintain monolithic platforms using PHP and CodeIgniter.",
+        "Adopt Laravel and Docker for microservices development.",
+        "Contribute to the creation of a scalable and maintainable microservices architecture.",
+        "Handle end-to-end development process, from conceptualization to deployment.",
+        "Collaborate with cross-functional teams to align web solutions with business objectives."
+      ]
+    }
+  ]
+}

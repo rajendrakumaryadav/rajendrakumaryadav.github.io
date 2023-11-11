@@ -1,0 +1,30 @@
+{
+  "certifications": [
+    {
+      "name": "Oracle OCI Foundation Certification",
+      "issuing_authority": "Oracle",
+      "date_of_completion": "2022-05-15",
+      "validity_till": "N/A",
+      "credential_url": "https://credly.com/badges/156b2743-cac0-45f0-ac26-710bb412f67a",
+      "credential_id": "156b2743-cac0-45f0-ac26-710bb412f67a",
+      "local_path": "assets/images/Data_Visualization_Using_Python.png"    },
+    {
+      "name": "Data Visualization Using Python",
+      "issuing_authority": "IBM",
+      "date_of_completion": "2022-09-16",
+      "validity_till": "N/A",
+      "credential_url": "https://credly.com/badges/156b2743-cac0-45f0-ac26-710bb412f67a",
+      "credential_id": "156b2743-cac0-45f0-ac26-710bb412f67a",
+      "local_path": "assets/images/Data_Visualization_Using_Python.png"
+    },
+    {
+      "name": "DataCamp Data Analysis Certification",
+      "issuing_authority": "DataCamp",
+      "date_of_completion": "2023-01-17",
+      "validity_till": "2025-01-16",
+      "credential_url": "https://www.datacamp.com/certificate/DAA0017716531459",
+      "credential_id": "DAA0017716531459",
+      "local_path": "assets/images/datacamp-certification.jpg"
+    }
+  ]
+}
