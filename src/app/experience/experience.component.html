@@ -4,13 +4,12 @@
   <div *ngIf="experienceData">
 
     <div class="mb-4" *ngFor="let exp of experienceData.experience">
-
       <h3 class="text-xl mb-3 font-semibold text-blue-900">
         &star; {{ exp.designation }} - {{ exp.company }} - ({{ exp.duration }})
       </h3>
 
       <section *ngIf="exp.innovation">
-        <h3 class="mb-3 px-2 font-bold text-gray-500">
+        <h3 class="mt-3 px-2 font-bold text-gray-500">
           <i class="fa-regular fa-lightbulb"></i> Innovation
         </h3>
         <p class="mx-4">
@@ -19,7 +18,7 @@
       </section>
 
       <section *ngIf="exp.overall_contribution">
-        <h3 class="mb-3 px-2 font-bold text-gray-500">
+        <h3 class="mt-3 px-2 font-bold text-gray-500">
           <i class="fa fa-hands-helping"></i> Overall Contribution
         </h3>
         <p class="mx-4">
@@ -28,23 +27,20 @@
       </section>
 
       <section *ngIf="exp.data_visualization">
-        <h3 class="mb-3 px-2 font-bold text-gray-500">
+        <h3 class="mt-3 px-2 font-bold text-gray-500">
           <i class="fa fa-bar-chart"></i> Data Visualization
         </h3>
         <p class="mx-4">
           {{ exp.data_visualization }}
         </p>
       </section>
-
-
       <section *ngIf="exp.responsibilities">
-        <h3 class="mb-2 px-2 text-start font-bold text-gray-500">
+        <h3 class="mt-3 px-2 text-start font-bold text-gray-500">
           <i class="fa-brands fa-critical-role"></i> Responsibilities
         </h3>
         <ol
           class="px-4 py-0.5"
-          *ngFor="let responsibilty of exp.responsibilities; let i=index;"
-        >
+          *ngFor="let responsibilty of exp.responsibilities; let i=index;">
           <li>
             {{i + 1}}. {{ responsibilty }}
           </li>
