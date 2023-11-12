@@ -11,7 +11,7 @@ import { BuildTimeService } from '../service/build-time.service';
 export class HomeComponent implements OnInit {
   buildTime: string = '';
   constructor (private titleService: Title, private buildTimeService: BuildTimeService) {
-    this.titleService.setTitle('Personal Portfolio - Rajendra Kumar Yadav - Under Construction');
+    this.titleService.setTitle('Rajendra Kumar R Yadav - Portfolio');
   }
 
   ngOnInit(): void {

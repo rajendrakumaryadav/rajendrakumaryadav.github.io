@@ -1,8 +1,8 @@
 import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
 import { NgModule } from '@angular/core';
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-components/app-routing.module';
+import { AppComponent } from './app-components/app.component';
 import { AcadmicComponent } from './components/acadmic/acadmic.component';
 import { CertificationComponent } from './components/certification/certification.component';
 import { ConnectComponent } from './components/connect/connect.component';
