@@ -1,14 +1,15 @@
-<div class="lg:w-1/2">
+<div class="lg:w-1/2 md:w-1/2">
   <h2 class="text-xl mb-3 font-semibold text-blue-900">
     <i class="fa fa-certificate"></i> Education
   </h2>
-  <section *ngIf="educationalData.educational">
+  <section *ngIf="educationalData">
     <div *ngFor="let education of educationalData.educational" class="mb-4">
-      <h4 class="mt-3 font-bold text-gray-500">
+      <h4 class="mt-3 font-bold text-gray-500" *ngIf="education.degree && education.dates">
         {{ education.degree }} ({{ education.dates }})
       </h4>
       <p class="">
         <span class="text-bold text-gray-500">Board / University:- </span> {{ education.name }}, {{ education.location }}</p>
+        <p *ngIf="education.state"><span class="text-bold text-gray-500">State:- </span> {{education.state}} </p>
       <p><span class="text-bold text-gray-500">Website:- </span> {{ education.url }}</p>
     </div>
   </section>

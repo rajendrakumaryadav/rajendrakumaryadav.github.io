@@ -1,6 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {CertificationData} from "../interfaces/certification-data";
-import {CertificationService} from "../service/certification.service";
+import { Component, OnInit } from '@angular/core';
+import { CertificationService } from "../../service/certification.service";
 
 @Component({
     selector: 'app-certification',
