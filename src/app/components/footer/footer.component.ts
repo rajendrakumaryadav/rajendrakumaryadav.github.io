@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BuildTimeService } from '../build-time.service';
+import { BuildTimeService } from '../../service/build-time.service';
 
 @Component({
   selector: 'app-footer',
