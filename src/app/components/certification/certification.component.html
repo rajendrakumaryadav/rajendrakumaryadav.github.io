@@ -5,7 +5,7 @@
   <section *ngIf="certificationData">
     <div
       *ngFor="let certification of certificationData.certifications"
-      class="mb-4"
+      class="mb-4 mx-4"
     >
       <h4 class="mt-3 font-bold text-gray-500">{{ certification.name }}</h4>
       <p>Issuing Authority: {{ certification.issuing_authority }}</p>
