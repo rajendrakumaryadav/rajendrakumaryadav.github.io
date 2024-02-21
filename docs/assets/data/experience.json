@@ -1,6 +1,22 @@
 {
   "experience": [
     {
+      "designation": "Associate Engineer",
+      "company": "Magna Steyr India",
+      "duration": "Feb, 2024 - Present",
+      "innovation": "Combining Python development skills with containerization techniques.",
+      "overall_contribution": "At the forefront of innovation, contributing to the dynamic field of data visualization through PowerBI.",
+      "data_visualization": "Actively engaged in PowerBI development, contributing to the creation of interactive and insightful dashboards for data analysis.",
+      "responsibilities": [
+        "Play a pivotal role in the development of cutting-edge microservices.",
+        "Design and implement scalable and efficient microservices architecture.",
+        "Utilize expertise in Python for software solutions.",
+        "Utilize Docker for containerization to ensure seamless deployment and scalability.",
+        "Contribute to the agility and efficiency of the development process.",
+        "Transform raw data into meaningful insights through PowerBI visualizations."
+      ]
+    },
+    {
       "designation": "Consultant",
       "company": "Magna Steyr India",
       "duration": "Jan, 2023 - Present",
