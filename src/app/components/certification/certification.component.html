@@ -1,16 +1,18 @@
-<div class="lg:w-2/3 md:w-2/3">
-  <h2 class="lg:text-lg md:text-md sm:text-sm mb-3 font-medium font-serif text-blue-900">
+<div class="w-full mx-auto">
+  <h2 class="lg:text-lg md:text-md sm:text-sm mb-3 font-bold underline font-serif text-blue-900">
     <i class="fa fa-certificate"></i> Certifications
   </h2>
+
   <section *ngIf="certificationData">
-    <div
-      *ngFor="let certification of certificationData.certifications"
-      class="mb-4 mx-4"
-    >
-      <h4 class="mt-3 font-bold text-gray-500">{{ certification.name }}</h4>
-      <p>Issuing Authority: {{ certification.issuing_authority }}</p>
-      <p>Date of Completion: {{ certification.date_of_completion }}</p>
-      <p>Validity Till: {{ certification.validity_till }}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+      <div *ngFor="let certification of certificationData.certifications" class="mb-4" [ngClass]="{'text-red-500': isExpired(certification.validity_till)}">
+        <h4 class="mt-3 font-bold text-gray-600" [ngClass]="{'text-red-500': isExpired(certification.validity_till)}">
+          {{ getCertificationName(certification) }}
+        </h4>
+        <p>Issuing Authority: {{ certification.issuing_authority }}</p>
+        <p>Date of Completion: {{ certification.date_of_completion }}</p>
+        <p>Status: <a href="{{certification.credential_url }}" class="text-blue-500 hover:underline" target="_blank">Validate Certificate</a></p>
+      </div>
     </div>
   </section>
 </div>

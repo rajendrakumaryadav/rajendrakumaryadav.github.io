@@ -11,4 +11,11 @@ export class CertificationService {
   getCertifications() {
     return this.httpClient.get(this.certificationUrl);
   }
+
+  isExpired(validityTill: string): boolean {
+    const currentDate = new Date();
+    if (validityTill === 'N/A') return false; // Not expired if there's no validity date
+    const validityDate = new Date(validityTill);
+    return currentDate > validityDate;
+  }
 }
